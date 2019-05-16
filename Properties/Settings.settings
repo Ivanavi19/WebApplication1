@@ -1,0 +1,9 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="WebApplication1.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="WebApplication1_WSNav_JobQueue_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://veronin.arbentia.com:7051/NAVExt/WS/VERONA%20INTERNO/Page/JobQueue</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

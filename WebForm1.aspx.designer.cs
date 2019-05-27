@@ -13,21 +13,12 @@ namespace WebApplication1 {
     public partial class WebForm1 {
         
         /// <summary>
-        /// Control form1.
+        /// Control PlaceHolder1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-        
-        /// <summary>
-        /// Control miTexto.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox miTexto;
+        protected global::System.Web.UI.WebControls.PlaceHolder PlaceHolder1;
     }
 }

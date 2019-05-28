@@ -1,0 +1,203 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PaginaHome.master.cs" Inherits="WebApplication1.PaginaHome" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>NAVJobQueueDashboardControl</title>
+
+    <!-- CSS-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="css/dataTables.bootstrap4.css" rel="stylesheet">
+    <link href="css/sb-admin.css" rel="stylesheet">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container-fluid">
+            <!-- Imagen de Fondo-->
+
+            <div>
+
+                <img src="img/arbentia2.jpg" />
+
+            </div>
+            <br />
+
+
+
+            <!-- Encabezado-->
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="https://www.arbentia.com/">ARBENTIA</a>
+                </li>
+                <li class="breadcrumb-item active">Colas de Proyecto - SECTOR EMPRESARIAL</li>
+            </ol>
+
+            <!-- Iconos de Colores-->
+            <div class="row">
+                <div class="col-xl-3 col-sm-6 mb-3">
+                    <div class="card text-white bg-primary o-hidden h-100">
+                        <div class="card-body">
+                            <div class="card-body-icon">
+                                <i class="fas fa-fw fa-comments"></i>
+                            </div>
+                            <div class="mr-5">AUTOMOCIÓN</div>
+                        </div>
+                        <a class="card-footer text-white clearfix small z-1" href="automocion.html">
+                            <span class="float-left">Empresas</span>
+                            <span class="float-right">
+                                <i class="fas fa-angle-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-sm-6 mb-3">
+                    <div class="card text-white bg-warning o-hidden h-100">
+                        <div class="card-body">
+                            <div class="card-body-icon">
+                                <i class="fas fa-fw fa-list"></i>
+                            </div>
+                            <div class="mr-5">RETAIL</div>
+                        </div>
+                        <a class="card-footer text-white clearfix small z-1" href="retail.html">
+                            <span class="float-left">Empresas</span>
+                            <span class="float-right">
+                                <i class="fas fa-angle-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-sm-6 mb-3">
+                    <div class="card text-white bg-success o-hidden h-100">
+                        <div class="card-body">
+                            <div class="card-body-icon">
+                                <i class="fas fa-fw fa-shopping-cart"></i>
+                            </div>
+                            <div class="mr-5">SERVICIOS</div>
+                        </div>
+                        <a class="card-footer text-white clearfix small z-1" href="servicios.html">
+                            <span class="float-left">Empresas</span>
+                            <span class="float-right">
+                                <i class="fas fa-angle-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-sm-6 mb-3">
+                    <div class="card text-white bg-danger o-hidden h-100">
+                        <div class="card-body">
+                            <div class="card-body-icon">
+                                <i class="fas fa-fw fa-life-ring"></i>
+                            </div>
+                            <div class="mr-5">ERRORES</div>
+                        </div>
+                        <a class="card-footer text-white clearfix small z-1" href="errores.html">
+                            <span class="float-left">Errores</span>
+                            <span class="float-right">
+                                <i class="fas fa-angle-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <!-- Tablas -->
+            <div class="card mb-3">
+                <div class="card-header">
+                    <i class="fas fa-table"></i>
+                    LISTADO TOTAL DE EMPRESAS
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-bordered" id="dataTable">
+                            <thead>
+                                <tr>
+                                    <th>Empresa</th>
+                                    <th>Sector</th>
+                                    <th>Oficina</th>
+                                    <th>País</th>
+                                    <th>Estado Cola Proyecto</th>
+                                    <th>Acceso</th>
+                                </tr>
+                            </thead>
+                            <tfoot>
+                                <tr>
+                                    <th>Empresa</th>
+                                    <th>Sector</th>
+                                    <th>Oficina</th>
+                                    <th>País</th>
+                                    <th>Estado Cola Proyecto</th>
+                                    <th>Acceso</th>
+                                </tr>
+                            </tfoot>
+                            <tbody>
+                                <tr>
+                                    <td>Tiger Nixon</td>
+                                    <td>System Architect</td>
+                                    <td>Edinburgh</td>
+                                    <td>Escocia</td>
+                                    <td><span class='text-success'><strong>Activa</strong></span></td>
+                                    <td><a class="btn btn-success" href="#">CONECTAR</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Tiger Nixon</td>
+                                    <td>System Architect</td>
+                                    <td>Edinburgh</td>
+                                    <td>Escocia</td>
+                                    <td><span class='text-danger'><strong>ERROR</strong></span></td>
+                                    <td><a class="btn btn-success" href="#">CONECTAR</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="card-footer small text-muted">ARBENTIA</div>
+            </div>
+
+        </div>
+        <!-- /.container-fluid -->
+        <!-- Detalles del Copyright -->
+        <footer class="sticky-footer">
+            <div class="container my-auto">
+                <div class="copyright text-center my-auto">
+                    <span>Copyright 2019 Arbentia. Aviso legal. Política de privacidad.</span>
+                </div>
+            </div>
+        </footer>
+
+      <!-- /#wrapper -->
+        <!-- Boton Subida Pagina-->
+        <a class="scroll-to-top rounded" href="#page-top">
+            <i class="fas fa-angle-up"></i>
+        </a>
+
+
+        <!-- JavaScript-->
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery.easing.min.js"></script>
+        <script src="js/Chart.min.js"></script>
+        <script src="js/jquery.dataTables.js"></script>
+        <script src="js/dataTables.bootstrap4.js"></script>
+        <script src="js/sb-admin.min.js"></script>
+        <script src="js/demo/datatables-demo.js"></script>
+        <script src="js/demo/chart-area-demo.js"></script>
+        <script src="js/demo/chart-bar-demo.js"></script>
+        <script src="js/demo/chart-pie-demo.js"></script>
+    </form>
+
+    <!--https://www.c-sharpcorner.com/UploadFile/4b0136/how-to-create-Asp-Net-website-with-css-template/ PASO 7-->
+
+</body>
+</html>
